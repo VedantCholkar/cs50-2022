@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-int main(void)
-{
+int main(void) {
     char name[15];
     printf("Enter your first name: ");
     scanf("%s", name);
