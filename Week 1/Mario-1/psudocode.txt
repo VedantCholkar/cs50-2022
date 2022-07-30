@@ -1,7 +1,0 @@
-Ask user for number of rows
-Number of rows must be positive and not bigger then 8
-n = number of rows
-While number of rows is less than n
-print space
-print hash
-newline
