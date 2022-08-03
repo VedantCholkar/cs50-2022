@@ -11,7 +11,11 @@ int main(void)
 
     for (int rows_left = 0; rows_left < user_input; rows_left++)
     {
-        for (int colums_left = 0; colums_left < rows_left+1; colums_left++)
+        for (int columns_finished = rows_left + 1; columns_finished < user_input; columns_finished++)
+        {
+            printf(" ");
+        }
+        for (int colums_left = 0; colums_left < rows_left + 1; colums_left++)
         {
             printf("#");
         }
@@ -29,9 +33,9 @@ First Step
     Check if the input is between 1 & 8
     If not, reprompt the user
 
-* Second step
+Second step
     Make the rows
     Make the column
     Make the box into a pyramid
-    Todo Right align the pyramid
+    Right align the pyramid
 */
