@@ -42,52 +42,55 @@ int main(void)
 
 int get_cents(void)
 {
-    int cents;
-    printf("Enter cents: ");
-    cents = scanf("%i", &cents);
-    return cents;
+    int user_input = 0;
+    do
+    {
+        printf("Enter cents: ");
+        scanf("%i", &user_input);
+    } while (user_input < 1);
+    return user_input;
 }
 
 int calculate_quarters(int cents)
 {
-    int quarters_needed;
-    while (cents > 25)
+    int quarters_needed = 0;
+    while (cents >= 25)
     {
         cents -= 25;
-        quarters_needed++;
+        quarters_needed += 1;
     }
     return quarters_needed;
 }
 
 int calculate_dimes(int cents)
 {
-    int dimes_needed;
-    while (cents > 10)
+    int dimes_needed = 0;
+    while (cents >= 10)
     {
         cents -= 10;
-        dimes_needed++;
+        dimes_needed += 1;
     }
     return dimes_needed;
 }
 
 int calculate_nickels(int cents)
 {
-    int nickels_needed;
-    while (cents > 5)
+    int nickels_needed = 0;
+    while (cents >= 5)
     {
         cents -= 5;
-        nickels_needed++;
+        nickels_needed += 1;
     }
     return nickels_needed;
 }
 
 int calculate_pennies(int cents)
 {
-    int pennies_needed;
-    while (cents > 1)
+    int pennies_needed = 0;
+    while (cents >= 1)
     {
         cents -= 1;
-        pennies_needed++;
+        pennies_needed += 1;
     }
     return pennies_needed;
 }
