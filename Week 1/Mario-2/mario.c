@@ -19,7 +19,7 @@ int main(void)
         {
             printf("#");
         }
-        printf(" ");
+        printf("  ");
         for (int colums_left2 = 0; colums_left2 < rows_left + 1; colums_left2++)
         {
             printf("#");
